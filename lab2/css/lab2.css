@@ -1,0 +1,26 @@
+h1{
+    color:rgb(58, 96, 134);
+    font-size: 200%;
+    margin-left: 10px;
+
+
+}
+
+p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-indent: 20px;
+    margin-left: 10px;
+    color:rgb(58, 96, 134);
+
+
+}
+
+#content {
+    background-color: thistle;
+    width: 500px;
+    min-height: 300px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+
+}
