@@ -7,3 +7,19 @@
     border: solid 1px #888;
     background-color: #DDD8C4;
   }
+
+  ol {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #5f556c;
+  }
+
+  pre {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #5f556c;
+  }
+
+  code {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #5f556c;
+
+  }
