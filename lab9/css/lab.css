@@ -7,3 +7,21 @@
     border: solid 1px #888;
     background-color: #DDD8C4;
   }
+
+  p {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #5f556c
+  }
+
+  div {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #5f556c
+  }
+
+
+  .special {
+    font-weight: bold;
+    font-style: italic;
+    font-size:larger;
+
+}
