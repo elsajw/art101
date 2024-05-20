@@ -1,21 +1,32 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+/*
+   lab.js - This simple JavaScript/jQuery script gets a value from an input field and outputs a modified version.
 
-// Constants
+   Requirements: jQuery must be loaded for this script to work.
 
-// Functions
+   Author: Elsa Williams
+   Date: May 2024
+*/
 
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
-}
+// Sorts the characters of a string in alphabetical order.
+function sortString(inputString) {
+  // We have to convert our string to an array and back again to sort it
+  return inputString.split('').sort().join('');
+};
+console.log(sortString);
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
 
-// let's get this party started
-main();
+
+
+// get value of input field
+const userName = $("#user-name").val();
+
+// now let's sort it
+const userNameSorted = sortString(userName);
+
+// append a new div to our output div
+$("#output").html('<div class="text"><p>' + "Sorted Name: " + userNameSorted + '</p></div>');
+
+// click listener for button
+$("#submit").click(function(){
+
+});
