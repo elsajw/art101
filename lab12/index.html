@@ -2,7 +2,7 @@
 <html>
 <head>
 	<!-- This title is used for tabs and bookmarks -->
-	<title>Lab X - Subject/Topic</title>
+	<title>Lab 12 - Conditionals</title>
 
 	<!-- Use UTF character set, a good idea with any webpage -->
   	<meta charset="UTF-8" />
@@ -23,25 +23,32 @@
 	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
 	<main id="content">
 		<section>
-			<h1>Lab X - Subject/Topic</h1>
+			<h1>Lab 12 - Conditionals</h1>
 			<div class="minor-section">
 					<h2>Challenge</h2>
-					<p>Restate the challenge of the lab here.</p>
+					<p>We were asked to explore conditionals for this lab by creating a sorting hat using JavaScript.</p>
 			</div>
 
 			<div class="minor-section">
 					<h2>Problems</h2>
-					<p>What problems arose? How did you solve them? </p>
-			</div>
-
-			<div class="minor-section">
-					<h2>Reflection</h2>
-					<p>Put your reflections about this assignment here. How did it go? What kind of energy did you put into the assignment? </p>
+					<p>I knew before testing my site that there was an issue with my code, because my JavaScript file has a bright red title compared to the black fonts of the other files. In the past, this has indicated a mistake on my part. Luckily, the document seemed to draw attention to this error, pointing out that "house is declared but its value is never read." So, I believe the issue to be something with the way that the line, "newText" has been written. This is where the value of house is meant to be read. After playing around with the code and googling solutions, I was still unable to fix this. But, I do think it's something minor and doable to fix in the future, especially since I know where the issue lies.</p>
 			</div>
 
 			<div class="minor-section">
 					<h2>Results</h2>
-					<div id="output"></div>
+				<div class="input-output">
+					<h2>Welcome to Hogwarts</h2>
+					<p>Prepare to be sorted to your house.</p>
+					Please enter your full name for sorting:
+					<input type="text"  id="input">
+					<button id="button">Submit</button>
+					<div id="output">
+					</div>
+				</div>
+
+					
+
+				
 			</div>
 		</section>
 		<nav id="links">
