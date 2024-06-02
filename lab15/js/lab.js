@@ -1,21 +1,40 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+/**
+ * Author:    Elsa Williams
+ * Created:  June 2, 2024
+ * 
+ **/
 
-// Constants
+const URL = "https://yesno.wtf/api";
 
-// Functions
+// create a button listener
+$("#my-button").click(function(){
+  // call ajax
+  $.ajax(ajaxObj);
+})
 
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
+// setup ajax object
+const ajaxObj = {
+  url: URL,
+  // data: {},
+  type: "GET",
+  dataType: "json",
+  success: ajaxSuccess,
+  error: ajaxError
 }
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
+// create ajax success callback (named)
+function ajaxSuccess(data) {
+  // console.log("Data:", data);
+  // parse json
+  const answer = data.answer;
+
+  // put answer in output div
+  $("#output").html(answer);
+  
 }
 
-// let's get this party started
-main();
+
+// create ajax error callback
+function ajaxError(request,error){
+	  console.log("Oops:", request, error);
+}
